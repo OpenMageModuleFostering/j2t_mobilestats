@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/J2t_Mobilestats",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "J2T Magento Mobile Stats is creating a bridge between your store and a mobile application!",
+    "authors": [
+    {
+        "name": "J2T DESIGN",
+        "email": "contact@j2t-design.net"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

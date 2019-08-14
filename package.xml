@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package>
+    <name>J2t_Mobilestats</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>J2T Magento Mobile Stats is creating a bridge between your store and a mobile application!</summary>
+    <description>J2T Magento Mobile Stats is creating a bridge between your store and a mobile application!&#xD;
+&#xD;
+It is possible with this module to check:&#xD;
+&#xD;
+your sales quantity/amount with a graph&#xD;
+most viewed products&#xD;
+the bestsellers&#xD;
+new customers&#xD;
+customers that buy the most&#xD;
+last 5 orders&#xD;
+last 5 search terms&#xD;
+top 5 search terms&#xD;
+Download the Android or iPhone app to enjoy!&#xD;
+&#xD;
+You simply need to put your store URL and your admin username/password to access to the above details!</description>
+    <notes>First release of the module</notes>
+    <authors><author><name>J2T DESIGN</name><user>j2tdesign</user><email>contact@j2t-design.net</email></author></authors>
+    <date>2012-06-04</date>
+    <time>12:33:03</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="J2t_Mobilestats.xml" hash="00a52e524908924f870a29a0e7dc8773"/></dir></target><target name="magecommunity"><dir name="J2t"><dir name="Mobilestats"><dir name="Helper"><file name="Data.php" hash="02af5abbf0aa772ffed994e5f6a50dd6"/></dir><dir name="Model"><file name="Feed.php" hash="6f534d272658f9869b6bf17b57af82d3"/><file name="Observer.php" hash="fdb1289e305e68eadb5249fc5fd30587"/></dir><dir name="controllers"><dir name="Adminhtml"><file name="StatsController.php" hash="a39c15ae456837f29e24ebd0675e18f4"/></dir><file name="IndexController.php" hash="585cdfac68eab5a5a1d24be08f632b1d"/></dir><dir name="etc"><file name="config.xml" hash="f594f8d20f76f28ecb039d2838c99473"/></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.2.0</min><max>5.4.3</max></php></required></dependencies>
+</package>

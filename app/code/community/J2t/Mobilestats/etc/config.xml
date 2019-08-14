@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <modules>
+        <J2t_Mobilestats>
+            <version>1.0.0</version>
+        </J2t_Mobilestats>
+    </modules>
+
+    <global>
+        <models>
+            <j2t_mobilestats>
+                <class>J2t_Mobilestats_Model</class>
+            </j2t_mobilestats>
+        </models>
+    </global>
+    
+    <admin>
+        <secure_url>
+            <j2t_mobilestats>/j2tmobilestats</j2t_mobilestats>
+        </secure_url>
+        <routers>
+            <j2t_mobilestats>
+                <use>admin</use>
+                <args>
+                    <module>J2t_Mobilestats</module>
+                    <frontName>j2tmobilestats_admin</frontName>
+                </args>
+            </j2t_mobilestats>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <j2t_mobilestats>
+                        <class>j2t_mobilestats/observer</class>
+                        <method>preDispatch</method>
+                    </j2t_mobilestats>
+                </observers>
+            </controller_action_predispatch>
+        </events>
+    </adminhtml>
+    
+    <frontend>
+        <routers>
+            <j2t_mobilestats>
+                <use>standard</use>
+                <args>
+                    <module>J2t_Mobilestats</module>
+                    <frontName>j2tmobilestats</frontName>
+                </args>
+            </j2t_mobilestats>
+        </routers>
+    </frontend>
+    <default>
+        <system>
+            <j2t_all>
+                <feed_url_j2t>j2t-design.net/notifications.rss</feed_url_j2t>
+            </j2t_all>
+        </system>
+    </default>
+</config>
