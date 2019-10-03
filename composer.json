@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/J2t_Mobilestats",
+    "name": "openmage-module-fostering\/j2t_mobilestats",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "J2T Magento Mobile Stats is creating a bridge between your store and a mobile application!",
     "authors": [
